@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: rgba(102, 195, 163, 0.111);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 1000px;
+}
+
+/* Public */
+
+.d-flex {
+  display: flex;
+}
+
+.align-i-center {
+  align-items: center;
+}
+
+.justify-c-center {
+  justify-content: center;
+}
+
+.link-1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.link-2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  background-color: black;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.link-2:hover {
+  background-color: white;
+  color: black;
+}
+
+.link-3 {
+  background-color: rgba(0, 124, 117, 1);
+  border: 0;
+  border-radius: 30px;
+  padding: 10px 60px;
+  text-decoration: none;
+  font-family: "Livvic", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.link-3:hover {
+  background-color: rgb(3, 165, 157);
+}
+
+.container-fluid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+/* Public */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container-navbar {
+  background-color: white;
+  border-radius: 20px;
+  height: 60px;
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li a {
+  font-family: "Inter", sans-serif;
+  color: black;
+  margin: 0 50px;
+  text-decoration: none;
+}
+
+/* Home */
+
+.h-text-1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.p-text-1 {
+  font-family: "Livvic", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* Home */
