@@ -26,6 +26,10 @@ html {
   justify-content: center;
 }
 
+.justify-c-between {
+  justify-content: space-between;
+}
+
 .link-1 {
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -43,6 +47,7 @@ html {
   border-radius: 5px;
   color: white;
   text-decoration: none;
+  transition: all 0.25s ease-out;
 }
 
 .link-2:hover {
@@ -60,6 +65,7 @@ html {
   color: white;
   font-size: 20px;
   font-weight: 600;
+  transition: all 0.25s ease-out;
 }
 
 .link-3:hover {
@@ -91,6 +97,11 @@ html {
   width: 50%;
 }
 
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
 /* Public */
 
 /* Navbar */
@@ -115,6 +126,66 @@ html {
   list-style: none;
 }
 
+.navbar li:nth-child(1),
+.navbar li:nth-child(3) {
+  position: relative;
+  &::before {
+    content: "";
+    height: 10%;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid rgb(101, 219, 178);
+    border-radius: 25px;
+    transition: all 0.25s ease-out;
+  }
+  &::before {
+    background-color: rgb(101, 219, 178);
+    width: 25%;
+    top: 30px;
+    left: 53px;
+    opacity: 0;
+  }
+  &:hover {
+    &::before {
+      border-radius: 30px;
+      width: 35%;
+      top: 20px;
+      left: 46px;
+      opacity: 1;
+    }
+  }
+}
+
+.navbar li:nth-child(2),
+.navbar li:nth-child(4) {
+  position: relative;
+  &::before {
+    content: "";
+    height: 10%;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid rgb(101, 219, 178);
+    border-radius: 25px;
+    transition: all 0.25s ease-out;
+  }
+  &::before {
+    background-color: rgb(101, 219, 178);
+    width: 32%;
+    top: 30px;
+    left: 53px;
+    opacity: 0;
+  }
+  &:hover {
+    &::before {
+      border-radius: 30px;
+      width: 40%;
+      top: 20px;
+      left: 47px;
+      opacity: 1;
+    }
+  }
+}
+
 .navbar li a {
   font-family: "Inter", sans-serif;
   color: black;
@@ -122,13 +193,11 @@ html {
   text-decoration: none;
 }
 
-/* Home */
+/* .navbar li a:hover {
+  text-decoration: underline;
+} */
 
-.h-text-1 {
-  font-family: "League Spartan", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-}
+/* Home */
 
 .p-text-1 {
   font-family: "Livvic", sans-serif;
@@ -136,4 +205,127 @@ html {
   font-weight: 300;
 }
 
+.p-text-2 {
+  font-family: "Jost", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.h-text-1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.h-text-2 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.h-text-3 {
+  font-family: "Jockey One", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.ellipse-1 {
+  position: absolute;
+  transform: translate(230px, -10px);
+  z-index: -1;
+}
+
+.ellipse-2 {
+  position: absolute;
+  transform: translate(-100px, 100px);
+  z-index: -1;
+}
+
+.image-home-1 {
+  position: absolute;
+  transform: translate(-25px, 220px);
+}
+
+.image-home-2 {
+  position: absolute;
+  transform: translate(300px, 100px);
+}
+
+.image-product-home {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0 5rem 0;
+}
+
+.image-product {
+  margin: 0 50px;
+}
+
+.wrap-image {
+  position: relative;
+  margin-bottom: 20px;
+  &::before,
+  &::after {
+    content: "";
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    z-index: -1;
+    border: 2px solid rgb(101, 219, 178);
+    border-radius: 30px;
+    transition: all 0.25s ease-out;
+  }
+  &::before {
+    background-color: rgb(101, 219, 178);
+    top: 0px;
+    left: 0px;
+  }
+  &::after {
+    bottom: 4px;
+    right: 0px;
+  }
+  &:hover {
+    &::before {
+      box-shadow: 6px -3px 10px rgba(0, 0, 0, 0.6);
+      border-radius: 30px;
+      top: -15px;
+      left: 15px;
+    }
+    &::after {
+      border: 2px solid rgb(66, 111, 96);
+      bottom: -15px;
+      right: 15px;
+    }
+  }
+}
+
+.wrap-image img {
+  filter: grayscale(1);
+  transition: all 0.3s ease-out;
+  border-radius: 30px;
+}
+
+.wrap-image img:hover {
+  filter: grayscale(0);
+  box-shadow: 6px -4px 14px rgba(0, 0, 0, 0.474);
+  border-radius: 30px;
+}
+
+/* .image-product img:first-child {
+  padding: 0 50px;
+}
+
+.image-product img:first-child:hover {
+  padding: 0;
+}
+
+.image-product img:nth-child(2) {
+  padding: 0 50px;
+  filter: grayscale(1);
+}
+
+.image-product img:nth-child(2):hover {
+  filter: grayscale(0);
+} */
 /* Home */
