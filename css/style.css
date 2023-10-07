@@ -72,6 +72,42 @@ html {
   background-color: rgb(3, 165, 157);
 }
 
+.container-icon-link {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.icon-link {
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.icon-link:nth-child(2),
+.icon-link:nth-child(3) {
+  margin: 0px 10px;
+}
+
+.icon-link:hover {
+  background-color: black;
+}
+
+.container-icon-link a:first-child .icon-link:hover img {
+  content: url("../image/Icon/twitter-white.png");
+}
+.container-icon-link a:nth-child(2) .icon-link:hover img {
+  content: url("../image/Icon/facebook-white.png");
+}
+.container-icon-link a:nth-child(3) .icon-link:hover img {
+  content: url("../image/Icon/instagram-white.png");
+}
+
 .container-fluid {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -102,7 +138,95 @@ html {
   width: 25%;
 }
 
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
 /* Public */
+
+/* Text */
+
+.p-text-1 {
+  font-family: "Livvic", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.p-text-2 {
+  font-family: "Jost", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.p-text-3 {
+  font-family: "Sarabun", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  width: 50%;
+}
+
+.h-text-1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.h-text-2 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.h-text-3 {
+  font-family: "Jockey One", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.h-text-4 {
+  font-family: "Paytone One", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.f-h-text {
+  font-family: "Acme", sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.f-p-text {
+  font-family: "Actor", sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.f-p-text a,
+.f-p-text-2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.f-p-text-2 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.f-p-text-3 {
+  font-family: "Andika", sans-serif;
+  color: black;
+  font-size: 18px;
+}
+
+/* Text */
 
 /* Navbar */
 .navbar {
@@ -149,7 +273,7 @@ html {
     &::before {
       border-radius: 30px;
       width: 35%;
-      top: 20px;
+      top: 22px;
       left: 46px;
       opacity: 1;
     }
@@ -179,7 +303,7 @@ html {
     &::before {
       border-radius: 30px;
       width: 40%;
-      top: 20px;
+      top: 22px;
       left: 47px;
       opacity: 1;
     }
@@ -198,37 +322,6 @@ html {
 } */
 
 /* Home */
-
-.p-text-1 {
-  font-family: "Livvic", sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-}
-
-.p-text-2 {
-  font-family: "Jost", sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.h-text-1 {
-  font-family: "League Spartan", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-}
-
-.h-text-2 {
-  font-family: "Istok Web", sans-serif;
-  font-size: 35px;
-  font-weight: 500;
-}
-
-.h-text-3 {
-  font-family: "Jockey One", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-}
 
 .ellipse-1 {
   position: absolute;
@@ -312,20 +405,13 @@ html {
   border-radius: 30px;
 }
 
-/* .image-product img:first-child {
-  padding: 0 50px;
-}
-
-.image-product img:first-child:hover {
-  padding: 0;
-}
-
-.image-product img:nth-child(2) {
-  padding: 0 50px;
-  filter: grayscale(1);
-}
-
-.image-product img:nth-child(2):hover {
-  filter: grayscale(0);
-} */
 /* Home */
+
+/* Footer */
+
+footer {
+  background-color: white;
+  padding: 100px 150px 10px 150px;
+}
+
+/* Footer */
