@@ -192,6 +192,22 @@ html {
   margin-bottom: 20px;
 }
 
+.h-text-5 {
+  font-family: "Judson", serif;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 30px 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.h-text-6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
 .f-h-text {
   font-family: "Acme", sans-serif;
   font-size: 22px;
@@ -406,6 +422,52 @@ html {
 }
 
 /* Home */
+
+/* Contact Us */
+
+.container-contact {
+  background-image: url("../image/contact/Group\ 16.png");
+  background-size: cover;
+}
+
+.kolom-input {
+  padding-top: 100px;
+}
+
+.input-contact {
+  padding: 15px 25rem 15px 10px;
+  margin: 5px 0 5px 300px;
+  border: 1px solid #e0e0e0;
+}
+
+.input-contact-select {
+  padding: 15px 26.4rem 15px 10px;
+  margin: 5px 0 5px 300px;
+  border: 1px solid #e0e0e0;
+}
+
+.kolom-input button {
+  /* padding: 15px 33.6rem 15px 10px; */
+  width: 580px;
+  height: 45px;
+  margin: 20px 0 20px 300px;
+  border: 0;
+  background-color: #007c75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.kolom-input button:hover {
+  background-color: #09b1a8;
+}
+
+/* Contact Us */
 
 /* Footer */
 
